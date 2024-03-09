@@ -50,4 +50,11 @@ groups:
 
 ## Next
 
-There's a lot of work to do...
+There's a lot of work to do:
+
+- [ ] The more complicated render engine
+- [ ] The layout system(maybe we don't always need to modify the panels manually)
+- [ ] Define a general and flexible spec of the dashboard model
+- [ ] Integrate with the Grafana API
+- [ ] Integrate with the K8s encosystem
+...
