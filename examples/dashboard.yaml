@@ -1,0 +1,16 @@
+name: my-dashboard
+version: v1alpha1
+title: "My Dashboard"
+style:
+  # TODO(zyy17): The reference also can be a URL.
+  reference: styles/my-dashboard-style.json
+groups:
+  - name: http-requests
+    title: "HTTP Requests"
+    isRow: false
+    panels:
+      - name: http-requests
+        title: "HTTP Requests"
+        description: "HTTP requests per second"
+        queries:
+          - expr: "rate(myapp_http_requests_total[$__rate_interval])"
