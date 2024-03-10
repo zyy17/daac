@@ -1,13 +1,13 @@
-# 🚧 daac
+# 🚧 dac
 
-`daac` is short for Dashboards as a Code. It helps the developers to create the Grafana(for now) dashboards by a simple YAML file.
+`dac` is short for **Dashboards as Code**. It helps the developers to create the Grafana(for now) dashboards by a simple YAML file.
 
 It's just a very simple wip project.
 
 ## How it works
 
 The main idea is to **separate** the metric queries from the Grafana dashboard JSON model and define the more simple dashboard model in YAML file.
-The `daac` will render the final Grafana dashboard JSON model by combining the two files.
+The `dac` will render the final Grafana dashboard JSON model by combining the two files.
 
 The `dashboard.yaml` may look like this:
 
@@ -38,12 +38,12 @@ groups:
    make
    ```
    
-   Then you will get the `daac` binary in the `bin` directory.
+   Then you will get the `dac` binary in the `bin` directory.
 
 2. Run the example
 
    ```console
-   ./bin/daac -f examples/dashboard.yaml -o bin/dashboard.json
+   ./bin/dac -f examples/dashboard.yaml -o bin/dashboard.json
    ```
 
 3. Use Grafana to import the `dashboard.json` file.
